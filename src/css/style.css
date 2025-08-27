@@ -18,6 +18,7 @@
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   /* color: var(--color-text); */
+  user-select: none;
 }
 
 html {
@@ -1082,7 +1083,7 @@ footer p {
   }
 
   .item-title h2 {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .nav-ul {
@@ -1168,6 +1169,15 @@ footer p {
 
   .faq summary {
     font-size: 15px;
+  }
+
+  .work-descr {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-descr div {
+    margin-bottom: 10px;
   }
 }
 
