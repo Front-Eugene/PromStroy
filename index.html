@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО "ПромСтройИнновация"</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/swiper.css">
+    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body class="preloader-active" id="home">
+    <div class="preloader" id="preloader">
+        <img src="src/img/logo.png" alt="">
+        <p style="font-size: 50px; color: #f0f0f0;">ПромСтройИнновация</p>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header class="reveal">
+        <div class="box">
+            <div class="menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul class="nav-ul">
+                    <a href="/" class="logo-text">
+                        <img style="width: 30px;" src="src/img/logo.png" alt="">
+                        ПромСтройИнновация
+                    </a>
+                    <div class="ul-wrap">
+                        <li>
+                            <a href="#uslugi">Услуги</a>
+                        </li>
+
+                        <li>
+                            <a href="#o-nas">О нас</a>
+                        </li>
+
+                        <li>
+                            <a href="#nashi-raboty">Наши работы</a>
+                        </li>
+
+                        <li>
+                            <a href="#novosti">Новости</a>
+                        </li>
+
+                        <li>
+                            <a href="#kontakty">Контакты</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный баннер -->
+        <section class="screen reveal">
+            <div class="screen-content">
+                <h1>Все виды кровли</h1>
+                <form class="calc-form" action="send.php">
+                    <div class="calc-header">
+                        <span>Юридическое лицо</span>
+                        <span class="calc-title">РАСЧЁТ СТОИМОСТИ</span>
+                    </div>
+                    <div class="calc-content">
+                        <div class="left-col">
+                            <div class="form-group">
+                                <label class="group-title">Выберите услугу:</label>
+                                <label class="checkbox-label"><input type="checkbox">Водоснабжение</label>
+                                <label class="checkbox-label"><input type="checkbox">Канализация</label>
+                                <label class="checkbox-label"><input type="checkbox">Ливневая канализация</label>
+                                <label class="checkbox-label"><input type="checkbox">Устройства тепловых сетей</label>
+                                <label class="checkbox-label"><input type="checkbox">Ремонтные работы</label>
+                                <label class="checkbox-label"><input type="checkbox">Другое</label>
+                            </div>
+                        </div>
+                        <div class="center-col">
+                            <div class="form-group">
+                                <label>Адрес объекта:</label>
+                                <input type="text" placeholder="Введите адрес">
+                            </div>
+                            <div class="form-group">
+                                <label>Прикрепить фото объекта:</label>
+                                <input type="file" id="file-upload" class="file-input">
+                                <label for="file-upload" class="file-label"><span>⇧ Загрузить файл</span></label>
+                            </div>
+                            <div class="form-group">
+                                <label class="group-title">Выберите способ связи:</label>
+                                <div class="messengers">
+                                    <span class="icon phone"></span>
+                                    <span class="icon viber"></span>
+                                    <span class="icon telegram"></span>
+                                    <span class="icon whatsapp"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="+375 (XX) XXX-XX-XX">
+                            <label class="personal-data">
+                                <input type="checkbox">Согласие с положением об обработке и защите персональных данных
+                            </label>
+                            <button type="submit">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+            <div class="img-3"></div>
+            <div class="shadow"></div>
+        </section>
+
+        <section id="uslugi" class="reveal">
+            <div class="box">
+                <div class="section-title">
+                    <h2>Наши популярные услуги</h2>
+                    <a href="">
+                        <button>Список услуг →</button>
+                    </a>
+                </div>
+                <div class="komers">
+                    <img src="src/img/logo.png" alt="">
+                    <h2>Для коммерческих объектов</h2>
+                </div>
+                <div class="komers-wrap">
+                    <div class="item" style="background: url(src/img/kryisha.jpg) center center/cover no-repeat;">
+                        <div class="item-title">
+                            <h2>Водоснабжение</h2>
+                            <div class="triangle"></div>
+                        </div>
+                        <a href="">Подробнее</a>
+                    </div>
+
+                    <div class="item" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;">
+                        <div class="item-title">
+                            <h2>Канализация</h2>
+                            <div class="triangle"></div>
+                        </div>
+                        <a href="">Подробнее</a>
+                    </div>
+
+                    <div class="item" style="background: url(src/img/obiekt.jpg) center center/cover no-repeat;">
+                        <div class="item-title">
+                            <h2>Ливневая канализация</h2>
+                            <div class="triangle"></div>
+                        </div>
+                        <a href="">Подробнее</a>
+                    </div>
+
+                    <div class="item" style="background: url(src/img/portfolio-krisha.jpg) center center/cover no-repeat;">
+                        <div class="item-title">
+                            <h2>Устройства тепловых сетей</h2>
+                            <div class="triangle"></div>
+                        </div>
+                        <a href="">Подробнее</a>
+                    </div>
+
+                    <div class="item last-item" style="background: url(src/img/stroika.jpg) center center/cover no-repeat;">
+                        <div class="item-title">
+                            <h2>Аварийно-ремонтные работы и аренда</h2>
+                            <div class="triangle"></div>
+                        </div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section id="preimushestva" class="reveal">
+            <div class="box" style="padding: 50px;">
+                <h2>Наши преимущества</h2>
+                <div class="advantages">
+
+                    <div class="adv-item">
+                        <div class="for-img-block">
+                            <img decoding="async" class="adv-img" src="src/img/clock.png" width="50" height="50" alt="Скорость">
+                        </div>
+                        <h3>Скорость</h3>
+                        <p>Молодая и мотивированная команда выполняет работы быстро.</p>
+                    </div>
+                    <div class="adv-item">
+                        <div class="for-img-block">
+                            <img decoding="async" class="adv-img" src="src/img/excavator.png" width="50" height="50" alt="Скорость">
+                        </div>
+                        <h3>Собственное оборудование</h3>
+                        <p>Собственная техническая база с современным оборудованием.</p>
+                    </div>
+                    <div class="adv-item">
+                        <div class="for-img-block">
+                            <img decoding="async" class="adv-img" src="src/img/check-mark.png" width="50" height="50" alt="Скорость">
+                        </div>
+                        <h3>Проверенные поставщики</h3>
+                        <p>Используем только надежные материалы и комплектующие.</p>
+                    </div>
+                    <div class="adv-item">
+                        <div class="for-img-block">
+                            <img decoding="async" class="adv-img" src="src/img/protected.png" width="50" height="50" alt="Скорость">
+                        </div>
+                        <h3>Гарантия 5 лет</h3>
+                        <p>Мы уверены в качестве работ и даем расширенную гарантию.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Этапы работ -->
+        <section class="stages-section">
+        <div class="box">  
+            <div class="header">
+                <h1 class="title">ЭТАПЫ РАБОТ</h1>
+                <button class="cta-button">Оставить заявку</button>
+            </div>
+
+            <div class="steps-list">
+                <div class="step">
+                    <div class="step-left">
+                        <div class="step-number">
+                            <span class="step-slash">/</span>
+                            <span class="step-digit">01</span>
+                        </div>
+                        <h3 class="step-title">Заявка и консультация</h3>
+                    </div>
+                    <p class="step-description">
+                        Вы оставляете заявку одним из способов: по телефону или через обратную связь сайта
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-left">
+                        <div class="step-number">
+                            <span class="step-slash">/</span>
+                            <span class="step-digit">02</span>
+                        </div>
+                        <h3 class="step-title">Выезд инженера и заключение договора</h3>
+                    </div>
+                    <p class="step-description">
+                        Наш инженер приезжает к вам и осматривает объект, предлагает оптимальные варианты по обустройству. По результату осмотра составляет договор на необходимый объём работ
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-left">
+                        <div class="step-number">
+                            <span class="step-slash">/</span>
+                            <span class="step-digit">03</span>
+                        </div>
+                        <h3 class="step-title">Выполнение работ</h3>
+                    </div>
+                    <p class="step-description">
+                        В согласованные день и время выполняем оговорённые работы
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-left">
+                        <div class="step-number">
+                            <span class="step-slash">/</span>
+                            <span class="step-digit">04</span>
+                        </div>
+                        <h3 class="step-title">Приёмка работ</h3>
+                    </div>
+                    <p class="step-description">
+                        Оформляем акт приёма-передачи в двух экземплярах. Предоставляем 5-летнюю гарантию
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-left">
+                        <div class="step-number">
+                            <span class="step-slash">/</span>
+                            <span class="step-digit">05</span>
+                        </div>
+                        <h3 class="step-title">Оплата</h3>
+                    </div>
+                    <p class="step-description">
+                        Вы производите оплату выполненных работ
+                    </p>
+                </div>
+            </div>
+        </div>  
+        </section>
+
+        <!--
+        <section id="o-nas" class="reveal">
+            <div class="box">
+                <div class="section-title">
+                    <h2>О компании ПромСтройИнновация</h2>
+                    <a href="o-nas.html">
+                        <button>Подробнее о нас →</button>
+                    </a>
+                </div>
+
+                <div class="o-nas-wrap">
+                    <div class="img" style="background: url(src/img/portfolio-krisha.jpg) center center/cover no-repeat;"></div>
+                    <div>
+                        <h3>Наша компания</h3> 
+                        <p>специализируется на предоставлении широкого спектра услуг в области монтажа и
+                        ремонта систем водоснабжения, канализации, ливневой канализации, дренажа и тепловых сетей. Мы
+                        гордимся своим опытом и профессионализмом, которые позволяют нам успешно выполнять задачи любой
+                        сложности.</p>
+
+                        <h3>Когда дело</h3> 
+                        <p>
+                            Касается монтажа систем водоснабжения, канализации, ливневой канализации, дренажа и
+                            устройства тепловых сетей, наша команда обладает необходимыми знаниями и навыками для выполнения
+                            работ качественно и эффективно. Мы используем только современное оборудование и материалы
+                            высокого качества, чтобы гарантировать долговечность и надежность наших систем.
+                        </p>
+
+                        <h3>Кроме того</h3> 
+                        <p>
+                            Мы также предлагаем ремонтные работы, включая устранение порыва водопровода, ремонт
+                            системы канализации и тепловых сетей. Наша команда опытных специалистов готова быстро
+                            реагировать на любые проблемы и предлагать эффективные решения, чтобы вернуть вашу систему к
+                            идеальной работе.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="section-h3">Наша команда</h3>
+
+                <div class="komers-wrap our-team">
+                    <div class="item" style="background: linear-gradient(#f0f0f0, #f0f0f0, #ba1c2c)">
+                        <div class="item-title">
+                            <p>Директор директор</p>
+                            <div class="triangle"></div>
+                        </div>
+                        <img src="src/img/team.png" alt="">
+                    </div>
+
+                    <div class="item" style="background: linear-gradient(#f0f0f0, #f0f0f0, #ba1c2c)">
+                        <div class="item-title">
+                            <p>Директор</p>
+                            <div class="triangle"></div>
+                        </div>
+                        <img src="src/img/team.png" alt="">
+                    </div>
+
+                    <div class="item" style="background: linear-gradient(#f0f0f0, #f0f0f0, #ba1c2c)">
+                        <div class="item-title">
+                            <p>Заместитель</p>
+                            <div class="triangle"></div>
+                        </div>
+                        <img src="src/img/team.png" alt="">
+                    </div>
+                </div>
+
+                <div class="our-team-text">
+                    <div class="img" style="  background: url(src/img/portfolio-krisha.jpg) center center/cover no-repeat;"></div>
+                    <div class="text">
+                        <h3>Наша компания</h3> 
+                        <p>специализируется на предоставлении широкого спектра услуг в области монтажа и
+                        ремонта систем водоснабжения, канализации, ливневой канализации, дренажа и тепловых сетей. Мы
+                        гордимся своим опытом и профессионализмом, которые позволяют нам успешно выполнять задачи любой
+                        сложности.</p>
+
+                        <h3>Когда дело</h3> 
+                        <p>
+                            Касается монтажа систем водоснабжения, канализации, ливневой канализации, дренажа и
+                            устройства тепловых сетей, наша команда обладает необходимыми знаниями и навыками для выполнения
+                            работ качественно и эффективно. Мы используем только современное оборудование и материалы
+                            высокого качества, чтобы гарантировать долговечность и надежность наших систем.
+                        </p>
+
+                        <h3>Кроме того</h3> 
+                        <p>
+                            Мы также предлагаем ремонтные работы, включая устранение порыва водопровода, ремонт
+                            системы канализации и тепловых сетей. Наша команда опытных специалистов готова быстро
+                            реагировать на любые проблемы и предлагать эффективные решения, чтобы вернуть вашу систему к
+                            идеальной работе.
+                        </p>
+                    </div>
+                    <div class="img" style="  background: url(src/img/kryisha.jpg) center center/cover no-repeat;"></div>
+                </div>
+
+                <div class="steps-section">
+                    <h3 class="section-h3">Этапы работ</h3>
+                    <div class="komers-wrap our-team step">
+                        <div class="item-wrap">
+                            <div class="item" style="background: linear-gradient(#f0f0f0, #f0f0f0, #ba1c2c)">
+                                1
+                            </div>
+                            <h3>Этап первый</h3>
+                            <p>Описание этапа работ</p>
+                        </div>
+
+                        <div class="arrow"></div>
+
+                        <div class="item-wrap">
+                            <div class="item" style="background: linear-gradient(#f0f0f0, #f0f0f0, #ba1c2c)">
+                                2
+                            </div>
+                            <h3>Этап второй</h3>
+                            <p>Описание этапа работ</p>
+                        </div>
+
+                        <div class="arrow"></div>
+
+                        <div class="item-wrap">
+                            <div class="item" style="background: linear-gradient(#f0f0f0, #f0f0f0, #ba1c2c)">
+                                3
+                            </div>
+                            <h3>Этап третий</h3>
+                            <p>Описание этапа работ</p>
+                        </div>
+
+                        <div class="arrow"></div>
+
+                        <div class="item-wrap">
+                            <div class="item" style="background: linear-gradient(#f0f0f0, #f0f0f0, #ba1c2c)">
+                                4
+                            </div>
+                            <h3>Этап четвертый</h3>
+                            <p>Описание этапа работ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        -->
+
+        <!-- Отзывы -->
+        <section id="otzyvy" class="reveal">
+            <div class="box">
+                <div class="section-title">
+                    <h2>Отзывы наших клиентов</h2>
+                </div>
+                <div class="slider-wrapper" style="max-width: 70%; position: relative; margin: auto;">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="src/img/kryisha.jpg" alt="Отзыв 1" style="width:100%;" /></div>
+                        <div class="swiper-slide"><img src="src/img/obiekt-rabota.jpg" alt="Отзыв 2" style="width:100%;" /></div>
+                        <div class="swiper-slide"><img src="src/img/obiekt.jpg" alt="Отзыв 3" style="width:100%;" /></div>
+                        <div class="swiper-slide"><img src="src/img/portfolio-krisha.jpg" alt="Отзыв 4" style="width:100%;" /></div>
+                        </div>
+                    </div>
+
+                    <button class="swiper-button-prev" aria-label="Previous slide" style="position: absolute; top: 50%; left: -60px; transform: translateY(-50%); background: transparent; border: none; cursor: pointer;">
+                    </button>
+                    
+                    <button class="swiper-button-next" aria-label="Next slide" style="position: absolute; top: 50%; right: -60px; transform: translateY(-50%); background: transparent; border: none; cursor: pointer;">
+                    </button>
+                </div>
+            </div>
+        </section>
+<style>
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ba1c2c !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 25px;
+    background: #ffffff;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--primary);
+}
+</style>
+
+<!-- Подключение Swiper JS -->
+        <!-- Наши работы -->
+        <section id="nashi-raboty" class="reveal">
+            <div class="box">
+                <div class="section-title">
+                    <h2>Наши работы</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея как портфолио -->
+        <section class="box reveal">
+            <div class="work-wrap">
+                <div class="item">
+                    <div class="img-address">
+                        <div class="img" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;">
+                            <div class="address">г.Минск ул.Пушкина 26, 30</div>
+                        </div>
+                    </div>
+                    <h2>Центральная канализация для офиса</h2>
+                    <div class="work-descr">
+                        <div>
+                            <p>Дата работ:</p>
+                            <p class="bold">01.04.2024</p>
+                        </div>
+
+                        <div>
+                            <p>Срок работ:</p>
+                            <p class="bold">2 месяца</p>
+                        </div>
+
+                        <a href="">
+                            <button class="cta-button ">Подробнее</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-address">
+                        <div class="img" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;">
+                            <div class="address">г.Минск ул.Пушкина 26, 30</div>
+                        </div>
+                    </div>
+                    <h2>Центральная канализация для офиса</h2>
+                    <div class="work-descr">
+                        <div>
+                            <p>Дата работ:</p>
+                            <p class="bold">01.04.2024</p>
+                        </div>
+
+                        <div>
+                            <p>Срок работ:</p>
+                            <p class="bold">2 месяца</p>
+                        </div>
+
+                        <a href="">
+                            <button class="cta-button ">Подробнее</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-address">
+                        <div class="img" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;">
+                            <div class="address">г.Минск ул.Пушкина 26, 30</div>
+                        </div>
+                    </div>
+                    <h2>Центральная канализация для офиса</h2>
+                    <div class="work-descr">
+                        <div>
+                            <p>Дата работ:</p>
+                            <p class="bold">01.04.2024</p>
+                        </div>
+
+                        <div>
+                            <p>Срок работ:</p>
+                            <p class="bold">2 месяца</p>
+                        </div>
+
+                        <a href="">
+                            <button class="cta-button ">Подробнее</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-address">
+                        <div class="img" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;">
+                            <div class="address">г.Минск ул.Пушкина 26, 30</div>
+                        </div>
+                    </div>
+                    <h2>Центральная канализация для офиса</h2>
+                    <div class="work-descr">
+                        <div>
+                            <p>Дата работ:</p>
+                            <p class="bold">01.04.2024</p>
+                        </div>
+
+                        <div>
+                            <p>Срок работ:</p>
+                            <p class="bold">2 месяца</p>
+                        </div>
+
+                        <a href="">
+                            <button class="cta-button">Подробнее</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="">
+                <button class="cta-button" style="border-radius: 10px;">Смотреть все проекты</button>
+            </a>
+        </section>
+
+        <!-- <section class="gallery-wrap box reveal">
+            <img class="gallery" src="src/img/kryisha.jpg" alt="">
+            <img class="gallery" src="src/img/kryisha.jpg" alt="">
+            <img class="gallery" src="src/img/kryisha.jpg" alt="">
+            <img class="gallery" src="src/img/obiekt-rabota.jpg" alt="">
+            <img class="gallery" src="src/img/obiekt-rabota.jpg" alt="">
+            <img class="gallery" src="src/img/rabota-portfolio.jpg" alt="">
+        </section> -->
+
+        <!-- FAQ -->
+        <section id="faq" class="reveal">
+            <div class="box">
+                <div class="section-title">
+                    <h2>Нас часто спрашивают</h2>
+                </div>
+                <div class="faq">
+                    <details>
+                        <summary>Что такое обустройство скважины?</summary>
+                        <p>Скважинный оголовок/адаптер/кессон, насос, автоматика, гидроаккумулятор.</p>
+                    </details>
+                    <details>
+                        <summary>Какие есть варианты обустройства скважины?</summary>
+                        <p>Оголовок, адаптер или кессон; погружной или поверхностный насос; автоматика.</p>
+                    </details>
+                    <details>
+                        <summary>Какие есть варианты обустройства скважины?</summary>
+                        <p>Оголовок, адаптер или кессон; погружной или поверхностный насос; автоматика.</p>
+                    </details>
+                    <details>
+                        <summary>Какие есть варианты обустройства скважины?</summary>
+                        <p>Оголовок, адаптер или кессон; погружной или поверхностный насос; автоматика.</p>
+                    </details>
+                    <details>
+                        <summary>Что нужно для обустройства, какое оборудование?</summary>
+                        <p>Насос, автоматика, гидроаккумулятор закрытого типа для стабильного давления.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.querySelectorAll('.faq details').forEach((details, _, allDetails) => {
+                details.addEventListener('toggle', () => {
+                    if (details.open) {
+                    allDetails.forEach(d => {
+                        if (d !== details) d.open = false;
+                    });
+                    }
+                });
+            });
+        </script>
+
+        <!-- Новости -->
+        <section id="novosti" class="reveal">
+            <div class="box">
+                <div class="section-title">
+                    <h2>Новости</h2>
+                </div>
+                <div class="news">
+                    <article class="news-item">
+                        <div class="img" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;"></div>
+                        <h4>Обновление парка техники — колесный экскаватор</h4>
+                        <p>Эксплуатационная масса 13 750 кг, объем ковша 0,6 м³, доступен в аренду.</p>
+                        <button class="cta-button">Читать далее...</button>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="img" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;"></div>
+                        <h4>Обновление парка техники — колесный экскаватор</h4>
+                        <p>Эксплуатационная масса 13 750 кг, объем ковша 0,6 м³, доступен в аренду.</p>
+                        <button class="cta-button">Читать далее...</button>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="img" style="background: url(src/img/obiekt-rabota.jpg) center center/cover no-repeat;"></div>
+                        <h4>Обновление парка техники — колесный экскаватор</h4>
+                        <p>Эксплуатационная масса 13 750 кг, объем ковша 0,6 м³, доступен в аренду.</p>
+                        <button class="cta-button">Читать далее...</button>
+                    </article>
+                </div>
+                <a href="">
+                    <button class="cta-button" style="margin: 20px 0;">Смотреть все</button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Подвал -->
+    <footer>
+        <div class="box" id="kontakty">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>г. Минск, ул. Бегомльская, 19-2</p>
+                    <p><a href="tel:+375257429710">+375 (25) 742–97–10</a></p>
+                    <p><a href="tel:+375292784580">+375 (29) 278–45–80</a></p>
+                    <p><a href="tel:+375172764580">+375 (17) 276–45–80</a></p>
+                    <p><a href="mailto:fastakva.by@gmail.com">fastakva.by@gmail.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>График работы</h4>
+                    <p>Пн–Сб: 8:00–21:00</p>
+                    <p>Вс — выходной</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Мы в мессенджерах</h4>
+                    <div class="messengers">
+                        <span class="icon viber"></span>
+                        <span class="icon telegram"></span>
+                        <span class="icon whatsapp"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ООО "ПромСтройИнновация". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/swiper.js"></script>
+    <script>
+    const swiper = new Swiper('.mySwiper', {
+        effect: 'cards',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: false,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
+</body>
+
+</html>
