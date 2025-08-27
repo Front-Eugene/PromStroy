@@ -1056,6 +1056,10 @@ footer p {
 
 @media (max-width: 768px) {
 
+  section .box {
+    padding: 100px 20px 50px 20px;
+  }
+
   .screen {
     height: 1000px;
     background-position-y: -500px;
@@ -1134,5 +1138,30 @@ footer p {
 
   h3 {
     font-size: 18px;
+  }
+
+  .ul-wrap {
+    margin-top: 10px;
+  }
+
+  .menu-btn {
+    top: 110px;
+  }
+
+  .step {
+    flex-wrap: wrap;
+  }
+
+  .work-wrap .item {
+    width: 100%;
+  }
+
+  .nav-ul.active {
+    display: block;
+  }
+
+  .ul-wrap li {
+    margin: 0;
+    margin-right: 10px;
   }
 }
