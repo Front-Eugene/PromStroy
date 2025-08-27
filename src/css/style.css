@@ -83,7 +83,7 @@ a {
 }
 
 .preloader img {
-  width: 200px;
+  width: 50px;
 }
 
 .preloader.hide {
@@ -1119,21 +1119,13 @@ footer p {
   .calc-content {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 1024px) {
-  .advantages {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
   h1 {
     font-size: 28px;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 14px;
   }
 
   h3 {
@@ -1163,5 +1155,24 @@ footer p {
   .ul-wrap li {
     margin: 0;
     margin-right: 10px;
+  }
+
+  .komers-wrap .item {
+    width: 100%;
+  }
+
+  .advantages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq summary {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantages {
+    grid-template-columns: 1fr 1fr;
   }
 }
