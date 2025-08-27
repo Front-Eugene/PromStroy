@@ -1056,6 +1056,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .img-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
 
   .ul-wrap a {
     font-size: 11px;
@@ -1071,6 +1077,7 @@ footer p {
   }
 
   .screen-content {
+    padding: 0 10px;
     padding-top: 13px;
     position: fixed;
   }
